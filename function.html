@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <p id="operasiAritmatika"></p>
+    <p id="operasiLogika"></p>
+    <p id="string"></p>
+    <p id="boolean"></p>
+    <p id="boolean2"></p>
+
+    <script>
+        // fungsi mengembalikan nilai bertipe integer
+        function operasiAritmatika(a, b) {
+            return a - b;
+        }
+        document.getElementById("operasiAritmatika").textContent = "operasiAritmatika(5, 2) = " + operasiAritmatika(5, 2);
+
+        // fungsi mengembalikan nilai bertipe boolean
+        function operasiLogika(a, b) {
+            return a || b;
+        }
+        document.getElementById("operasiLogika").textContent = "operasiLogika(true, false) = " + operasiLogika(true, false);
+
+        // fungsi mengembalikan nilai bertipe string 
+        function string(a, b) {
+            return a + " " + b;
+        }
+        document.getElementById("string").textContent = "string('Neneng', 'Anjarwati') = " + string('Neneng', 'Anjarwati');
+
+        // fungsi mengembalikan nilai bertipe boolean 
+        function boolean(a, b) {
+            return a == b;
+        }
+        document.getElementById("boolean").textContent = "boolean(5, '5') = " + boolean(5, '5');
+
+        // fungsi mengembalikan nilai bertipe boolean 
+        function boolean2(a, b) {
+            return a === b;
+        }
+        document.getElementById("boolean2").textContent = "boolean2(5, '5') = " + boolean2(5, '5');
+    </script>
+</body>
+</html>
